@@ -4,6 +4,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+yarn.lock
 
 # Swap the comments on the following lines if you don't wish to use zero-installs
 # Documentation here: https://yarnpkg.com/features/zero-installs
@@ -14,6 +15,7 @@
 logs
 *.log
 npm-debug.log*
+package-lock.json
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
@@ -114,3 +116,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#others
+.pnp.cjs
+.pnp.loader.mjs
