@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { Container } from "@mui/material"
@@ -6,16 +7,30 @@ import { getUser } from "../services/users"
 
 const App = () => {
 
-  const [inputUser, setInputUser] = useState('JHDEZ1108');
-  const [userState, setState] = useState('inputUser');
+  const [inputUser, setInputUser] = useState('1');
+  const [userState, setUserState] = useState('inputUser');
+  const [notFound, setNotFound] = useState(false);
   
   const getGitHubUser =  async (user) =>{
     const userResponse = await getUser(user);
+    
+    if(userState === '1'){
+      localStorage.setItem('pokemonID', userResponse)
+    }
+    
+    if(userResponse.message === 'Not Found'){
+      const {pokemonID} = localStorage;
+      setInputUser(pokemonID);
+      setNotFound(true);
+    }else{
+      setUserState(userResponse);
+    }
+    
   };
-  
+  console.log(userState);
   useEffect(() => {
     getGitHubUser(inputUser);
-  });
+  },[inputUser]);
   
   return(
     <Container sx={{

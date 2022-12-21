@@ -28,7 +28,7 @@ const Searcher= (props) => {
       <TextField 
         id="filled-basic" label="Github User" variant="filled" 
         color="primary"
-        placeholder="Search user"
+        placeholder="1"
         size="small"
         value={valueInput}
         onChange={onSearchValueChange}
