@@ -7,20 +7,20 @@ import { getUser } from "../services/users"
 
 const App = () => {
 
-  const [inputUser, setInputUser] = useState('1');
+  const [inputUser, setInputUser] = useState('JHDEZ1108');
   const [userState, setUserState] = useState('inputUser');
   const [notFound, setNotFound] = useState(false);
   
   const getGitHubUser =  async (user) =>{
     const userResponse = await getUser(user);
     
-    if(userState === '1'){
-      localStorage.setItem('pokemonID', userResponse)
+    if(userState === 'JHDEZ1108'){
+      localStorage.setItem('JHDEZ1108', userResponse)
     }
     
     if(userResponse.message === 'Not Found'){
-      const {pokemonID} = localStorage;
-      setInputUser(pokemonID);
+      const { JHDEZ1108 } = localStorage;
+      setInputUser(JHDEZ1108, userResponse);
       setNotFound(true);
     }else{
       setUserState(userResponse);
