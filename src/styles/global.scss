@@ -1,8 +1,31 @@
-/* $base-color: black;
-$color: white;
+$base-color: #0A1929;
+$color: #E7EBF0;
 
 body{ 
   background-color: $base-color;
   color: $color;
 }
- */
+
+/* unvisited link */
+a:link {
+  color: $color;
+  text-decoration:none;
+}
+
+/* visited link */
+a:visited {
+  color: $color;
+  text-decoration:none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration:underline;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration:none;
+}

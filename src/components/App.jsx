@@ -34,7 +34,7 @@ const App = () => {
   
   return(
     <Container sx={{
-      background: 'whitesmoke',
+      background: '#001E3C',
       borderRadius: '16px',
       marginTop: '40px',
       display: 'flex',

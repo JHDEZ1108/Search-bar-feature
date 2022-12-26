@@ -13,7 +13,7 @@ const PaperInformation = (props) => {
 
 
   return(
-    <Paper elevation={3} sx={{ justifyContent: 'right'}}>
+    <Paper elevation={3} sx={{backgroundColor: '#132F4C', color:'#E7EBF0'}}>
       <Grid
         container
         sx={{ 

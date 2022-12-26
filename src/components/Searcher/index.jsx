@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Stack, TextField, IconButton } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import '@styles/global.scss';
 
 const Searcher= (props) => {
   // eslint-disable-next-line react/prop-types
@@ -32,15 +33,26 @@ const Searcher= (props) => {
         size="small"
         value={valueInput}
         onChange={onSearchValueChange}
+        inputProps={{ style: { color: '#E7EBF0' } }}
         sx={{
           width: '100%',
+          backgroundColor: '#132F4C',
+          "& .MuiFormLabel-root": {
+            color: '#E7EBF0'
+          },
+          "& .MuiFormLabel-root.Mui-focused": {
+              color: '#E7EBF0'
+          },
+          border: '1px solid #E7EBF0', 
+          borderRadius: 1
         }}
       />
       <IconButton
         onClick={handleSubmit}
         size="small"
         sx={{
-          left: '-50px'
+          left: '-50px',
+          color:'#E7EBF0'
         }}
       >
         <SearchIcon />

@@ -20,18 +20,19 @@ const LocationInformation = (props) => {
       container
       spacing={2}
       sx={{
-        alignItems: 'center'
+        alignItems: 'center',
+        color: '#B2BAC2'
       }}
     >
       <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
-          <LocationOnIcon/>
+          <LocationOnIcon sx={{color: '#E7EBF0'}}/>
           <Typography>{location}</Typography>
         </Stack>
       </Grid>
       <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
-          <TwitterIcon/>
+          <TwitterIcon sx={{color: '#E7EBF0'}}/>
           {twitter_username !== null
             ? <Typography>{`@${twitter_username}`}</Typography>
             : <Typography>Not Available</Typography>
@@ -40,7 +41,7 @@ const LocationInformation = (props) => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
-          <LanguageIcon/>
+          <LanguageIcon sx={{color: '#E7EBF0'}}/>
           {blog !== null
             ? <a target="_blank" href={`https://${blog}`} rel="noreferrer"><Typography>{blog}</Typography></a>
             : <Typography>Not Available</Typography>
@@ -49,7 +50,7 @@ const LocationInformation = (props) => {
       </Grid>
       <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
-          <BusinessIcon />
+          <BusinessIcon sx={{color: '#E7EBF0'}}/>
           {company !== null
             ? <Typography>{company}</Typography>
             : <Typography>Not Available</Typography>
