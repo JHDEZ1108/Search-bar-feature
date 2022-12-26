@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable camelcase */
-import { Paper, Stack, Typography } from "@mui/material";
+import { Paper, Grid, Typography } from "@mui/material";
 import React from "react";
 
 const PaperInformation = (props) => {
@@ -13,28 +13,28 @@ const PaperInformation = (props) => {
 
 
   return(
-    <Paper elevation={3}>
-      <Stack 
-        spacing={3}
-        direction="row"
-        sx={{
-          justifyContent: 'space-evenly',
-          marginLeft: '20px'
+    <Paper elevation={3} sx={{ justifyContent: 'right'}}>
+      <Grid
+        container
+        sx={{ 
+        textAlign: "center",
+        marginTop: "15px",
+        marginBottom: "15px",
         }}
       >
-        <Stack>
-          <Typography variant="h5">Respos</Typography>
-          <Typography variant="h6">{public_repos}</Typography>
-        </Stack>
-        <Stack>
-          <Typography variant="h5">Followers</Typography>
-          <Typography variant="h6">{followers}</Typography>
-        </Stack>
-        <Stack>
-          <Typography variant="h5">Following</Typography>
-          <Typography variant="h6">{following}</Typography>
-        </Stack>
-      </Stack>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Respos</Typography>
+          <Typography variant="body1">{public_repos}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Followers</Typography>
+          <Typography variant="body1">{followers}</Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Typography variant="h6">Following</Typography>
+          <Typography variant="body1">{following}</Typography>
+        </Grid>
+      </Grid>
     </Paper>
   )
 };

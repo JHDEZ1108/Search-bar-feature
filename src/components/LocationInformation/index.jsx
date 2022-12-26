@@ -20,16 +20,16 @@ const LocationInformation = (props) => {
       container
       spacing={2}
       sx={{
-        marginTop: '20px'
+        alignItems: 'center'
       }}
     >
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
           <LocationOnIcon/>
           <Typography>{location}</Typography>
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
           <TwitterIcon/>
           {twitter_username !== null
@@ -38,7 +38,7 @@ const LocationInformation = (props) => {
           }
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
           <LanguageIcon/>
           {blog !== null
@@ -47,7 +47,7 @@ const LocationInformation = (props) => {
           }
         </Stack>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Stack direction="row" spacing={2}>
           <BusinessIcon />
           {company !== null
