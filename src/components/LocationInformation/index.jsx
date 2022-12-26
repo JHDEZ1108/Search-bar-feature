@@ -42,7 +42,7 @@ const LocationInformation = (props) => {
         <Stack direction="row" spacing={2}>
           <LanguageIcon/>
           {blog !== null
-            ? <a target="_blank" href={blog} rel="noreferrer"><Typography>{blog}</Typography></a>
+            ? <a target="_blank" href={`https://${blog}`} rel="noreferrer"><Typography>{blog}</Typography></a>
             : <Typography>Not Available</Typography>
           }
         </Stack>
