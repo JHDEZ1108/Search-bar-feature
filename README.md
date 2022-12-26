@@ -6,7 +6,7 @@ This template is to understand how a browser functionality works
 
 ### 🤖 Guía Rápida
 
-1.  **Clona el repositorio.**
+1.  **Clone the repository.**
 
     In case you haven't already: 
 
@@ -15,7 +15,7 @@ This template is to understand how a browser functionality works
     cd Search-bar-feature
     ```
     
-1.  **Instala dependencias.**
+2.  **Install dependencies.**
 
     From the root of the repository:
 
@@ -23,7 +23,7 @@ This template is to understand how a browser functionality works
     yarn
     ```
 
-1.  **Inicia el proyecto**
+3.  **Start the project.**
 
     ```sh
     yarn start
