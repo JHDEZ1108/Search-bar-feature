@@ -1,14 +1,14 @@
 <h1 align="center">
 Search-bar-feature
 </h1>
-this template is to understand how a browser functionality works 
+This template is to understand how a browser functionality works 
                       using the github API  
 
 ### 🤖 Guía Rápida
 
 1.  **Clona el repositorio.**
 
-    En caso que no lo hayas hecho ya: 
+    In case you haven't already: 
 
     ```sh
     git clone git@github.com:JHDEZ1108/Search-bar-feature.git
@@ -17,7 +17,7 @@ this template is to understand how a browser functionality works
     
 1.  **Instala dependencias.**
 
-    Desde la raiz del repositorio:
+    From the root of the repository:
 
     ```sh
     yarn
@@ -29,7 +29,7 @@ this template is to understand how a browser functionality works
     yarn start
     ```
 
-    El sitio estará disponible en http://localhost:8080.
+    The site will be available at http://localhost:3007
     
 --------
 
