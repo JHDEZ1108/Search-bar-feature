@@ -13,7 +13,7 @@ const Description = (props) => {
       <Stack>
         {bio !== null 
           ? <Typography>{bio}</Typography>
-          : <Typography>Lorem ipsum dolor sit amet. Ea excepturi doloribus ea praesentium nihil nam dolore laboriosam ad fugit nobis</Typography>
+          : <Typography>Without description</Typography>
         }
       </Stack>
       <PaperInformation userState={userState} />
