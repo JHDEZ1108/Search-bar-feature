@@ -20,7 +20,7 @@ const PaperInformation = (props) => {
           <Typography>{public_repos}</Typography>
         </Stack>
         <Stack>
-          <Typography>Follower</Typography>
+          <Typography>Followers</Typography>
           <Typography>{followers}</Typography>
         </Stack>
         <Stack>
