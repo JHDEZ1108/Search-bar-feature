@@ -3,8 +3,13 @@ Search-bar-feature
 </h1>
 This template is to understand how a browser functionality works 
                       using the github API  
+                      
+### Demo: https://search-bar-feature.netlify.app
+--------
 
-### 🤖 Guía Rápida
+<h3 align="center">
+🤖 Guía Rápida
+</h3>
 
 1.  **Clone the repository.**
 
